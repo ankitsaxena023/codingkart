@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,775;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <section class="hero-container">
+        <div class="navbar-section">
+          <div>
+            <img src="Images/logo.png" alt="logo" class="logo-img" />
+          </div>
+          <div>
+            <nav>
+              <ul>
+                <li>HOME</li>
+                <li>ABOUT US</li>
+                <li>SHOP</li>
+                <li>BLOG</li>
+                <li>CONTACT</li>
+                <li class="cart-container">
+                  <img
+                    src="/Images/shop-cart.png"
+                    alt=""
+                    class="cart-img"
+                  /><span>$0.00</span>
+                  <span class="cart-value">1</span>
+                </li>
+              </ul>
+            </nav>
+            <div class="cart"></div>
+          </div>
+        </div>
+        <div class="hero-text-section">
+          <div class="navigate-back">
+            <div class="navigate" id="navigatebtn" onclick="hideShow()">
+              <i class="fa fa-regular fa-paper-plane icon-mail"></i>
+              <span id="navigate-btn">Navigate</span>
+            </div>
+            <div class="back" id="backbtn">
+              <div class="back-text" onclick="showBack()">
+                <i class="fa-solid fa-less-than back-icon"></i>
+                <h4 id="back-btn">Back</h4>
+              </div>
+              <h4>Premium Quality</h4>
+              <h4>Organic Goods</h4>
+              <h4>Naturix Farm</h4>
+            </div>
+          </div>
+          <div class="hero-text">
+            <h1>
+              Live <span class="hero-dynamic-text">Organic</span> for live
+              <span class="hero-dynamic-text dynamic-text" id="dynamicText"
+                >Healthy</span
+              >
+            </h1>
+            <h4>Organic marijuana and lot more to your door</h4>
+            <button class="shop-now">shop now</button>
+          </div>
+          <img
+            src="/Images/hero-banner-leaf.png"
+            alt="hero-leaf"
+            class="hero-leaf"
+          />
+        </div>
+      </section>
+      <section class="organic-container">
+        <div class="organic-text-container">
+          <h1>We are <span class="organic-text">Organic Farmfood</span></h1>
+          <div class="about-text">
+            <span class="line"></span>
+            <p>about modi farmfood</p>
+            <span class="line"></span>
+          </div>
+        </div>
+
+        <div class="food-quality-container">
+          <div class="food-quality-card">
+            <img
+              src="/Images//leaf-green.png"
+              alt="green-leaf"
+              class="leaf-img"
+            />
+            <h3>Fresh From Naturix Farm</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur
+              <br />adipisicing elit. Maiores
+            </p>
+            <a class="btn" href="#">
+              <span>Read More</span>
+            </a>
+          </div>
+          <div class="food-quality-card">
+            <img
+              src="/Images//leaf-yellow.png"
+              alt="yellow-leaf"
+              class="leaf-img"
+            />
+            <h3>100% Organic Goods</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur
+              <br />adipisicing elit. Maiores
+            </p>
+            <a class="btn" href="#">
+              <span>Read More</span>
+            </a>
+          </div>
+          <div class="food-quality-card">
+            <img src="/Images/leaf-pink.png" alt="pink-leaf" class="leaf-img" />
+            <h3>Premium Quality</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur
+              <br />adipisicing elit. Maiores
+            </p>
+            <a class="btn" href="#">
+              <span>Read More</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="organic-goods-container">
+        <div class="organic-text-container">
+          <img
+            src="/Images/devider-leaf.png"
+            alt="leaf-image"
+            class="devider-leaf-img"
+          />
+          <h1 class="organic-text">
+            Modi <span class="organic-text">Organic Goods</span>
+          </h1>
+          <div class="about-text">
+            <span class="line"></span>
+            <p>about modi farmfood</p>
+            <span class="line"></span>
+          </div>
+        </div>
+        <div class="organic-good-card-container">
+          <div class="prev-btn">
+            <i class="fa-solid fa-less-than back-icon"></i>
+          </div>
+          <div class="organic-good-card">
+            <img src="/Images/product1.png" alt="" />
+            <p>Praesent commodo id velit</p>
+            <p class="price">$50.00</p>
+            <a class="btn2" href="#">
+              <span>Add To Cart</span>
+            </a>
+            <div class="discount">
+              <p>-10%</p>
+            </div>
+          </div>
+          <div class="organic-good-card">
+            <img src="/Images/product2.png" alt="" />
+            <p>Praesent commodo id velit</p>
+            <p class="price">$50.00</p>
+            <a class="btn2" href="#">
+              <span>Add To Cart</span>
+            </a>
+            <div class="discount">
+              <p>-10%</p>
+            </div>
+          </div>
+          <div class="organic-good-card">
+            <img src="/Images/product1.png" alt="" />
+            <p>Praesent commodo id velit</p>
+            <p class="price">$50.00</p>
+            <a class="btn2" href="#">
+              <span>Add To Cart</span>
+            </a>
+            <div class="discount">
+              <p>-10%</p>
+            </div>
+          </div>
+          <div class="organic-good-card">
+            <img src="/Images/product1.png" alt="" />
+            <p>Praesent commodo id velit</p>
+            <p class="price">$50.00</p>
+            <a class="btn2" href="#">
+              <span>Add To Cart</span>
+            </a>
+            <div class="discount">
+              <p>-10%</p>
+            </div>
+          </div>
+          <div class="next-btn">
+            <i class="fa-solid fa-greater-than back-icon"></i>
+          </div>
+        </div>
+        <div class="bottom-btn">
+          <span></span>
+          <span></span>
+          <span id="green-bottom-btn"></span>
+          <span></span>
+        </div>
+      </section>
+      <section class="quality-container">
+        <div class="organic-text-container">
+          <h1>We are <span class="organic-text">Organic Farmfood</span></h1>
+          <div class="about-text">
+            <span class="line"></span>
+            <p>Features natrurix farmfood</p>
+            <span class="line"></span>
+          </div>
+        </div>
+        <div class="quality-bottom-container">
+          <div class="features">
+            <div class="features-text">
+              <p class="features-name">Premium Quality</p>
+              <span class="quality-line"></span>
+              <p class="features-desc">
+                Lorem ipsum, dolor sit amet consectetur
+                <br />adipisicing elit. Maiores
+              </p>
+            </div>
+            <div class="features-text">
+              <p class="features-name">Premium Quality</p>
+              <span class="quality-line"></span>
+              <p class="features-desc">
+                Lorem ipsum, dolor sit amet consectetur
+                <br />adipisicing elit. Maiores
+              </p>
+            </div>
+            <div class="features-text">
+              <p class="features-name">Premium Quality</p>
+              <span class="quality-line"></span>
+              <p class="features-desc">
+                Lorem ipsum, dolor sit amet consectetur
+                <br />adipisicing elit. Maiores
+              </p>
+            </div>
+          </div>
+          <div class="quality-single-leaf-img">
+            <img src="/Images/gray-leaf.png" alt="" />
+            <img src="/Images/gray-leaf.png" alt="" />
+            <img src="/Images/gray-leaf.png" alt="" />
+          </div>
+          <div class="middle-img-container">
+            <img src="/Images/organic-logo.png" alt="" class="organic-logo" />
+            <img
+              src="/Images/organic-center-leaf.png"
+              alt=""
+              class="organic-center"
+            />
+          </div>
+          <div class="quality-single-leaf-img">
+            <img src="/Images/gray-leaf.png" alt="" />
+            <img src="/Images/gray-leaf.png" alt="" />
+            <img src="/Images/gray-leaf.png" alt="" />
+          </div>
+          <div class="features">
+            <div class="features-text features-right">
+              <p class="features-name">100% Organic Gaurantee</p>
+              <span class="quality-line"></span>
+              <p class="features-desc">
+                Lorem ipsum, dolor sit amet consectetur
+                <br />adipisicing elit. Maiores
+              </p>
+            </div>
+            <div class="features-text features-right">
+              <p class="features-name">Super Healthy</p>
+              <span class="quality-line"></span>
+              <p class="features-desc">
+                Lorem ipsum, dolor sit amet consectetur
+                <br />adipisicing elit. Maiores
+              </p>
+            </div>
+            <div class="features-text features-right">
+              <p class="features-name">Best Quality</p>
+              <span class="quality-line"></span>
+              <p class="features-desc">
+                Lorem ipsum, dolor sit amet consectetur
+                <br />adipisicing elit. Maiores
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="newsletter-container">
+        <div class="newsletter-text">
+          <p>join our newsletter</p>
+          <h2>Subscribe Newsletter</h2>
+        </div>
+        <div class="newsletter-input">
+          <input type="text" name="" placeholder="Enter your e-mail" />
+        </div>
+        <a class="btn3" href="#">
+          <span
+            >Subscribe<i class="fa fa-solid fa-paper-plane icon-mail2"></i
+          ></span>
+        </a>
+      </section>
+      <section class="info-container">
+        <div class="first-container">
+          <img src="/Images/footer-logo.png" alt="" />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing <br />
+            elit. Doloremque porro nostrum possimus consectetur <br />
+            deserunt tenetur?
+          </p>
+          <div class="social-icons-text">
+            <p>
+              <i class="fa-solid fa-location-dot"></i>125/2 Single Streen Road,
+              california, united state
+            </p>
+            <p>
+              <i class="fa-solid fa-earth-oceania"></i>www.modimarijuana.com
+            </p>
+            <p><i class="fa-solid fa-envelope"></i>contact@modimarijuana.com</p>
+          </div>
+        </div>
+        <div class="second-container">
+          <p>Information</p>
+          <span
+            ><i class="fa-solid fa-greater-than back-icon info-solid-btn"></i
+            >About Out Shop</span
+          >
+          <span
+            ><i class="fa-solid fa-greater-than back-icon info-solid-btn"></i
+            >Top Sellers</span
+          >
+          <span
+            ><i class="fa-solid fa-greater-than back-icon info-solid-btn"></i
+            >Our Blog</span
+          >
+          <span
+            ><i class="fa-solid fa-greater-than back-icon info-solid-btn"></i
+            >New Products</span
+          >
+          <span
+            ><i class="fa-solid fa-greater-than back-icon info-solid-btn"></i
+            >Secure Shopping</span
+          >
+        </div>
+        <div class="third-container">
+          <p>My Account</p>
+          <span
+            ><i class="fa-solid fa-greater-than back-icon info-solid-btn"></i>My
+            Account</span
+          >
+          <span
+            ><i class="fa-solid fa-greater-than back-icon info-solid-btn"></i
+            >Discounts</span
+          >
+          <span
+            ><i class="fa-solid fa-greater-than back-icon info-solid-btn"></i
+            >Personal Information</span
+          >
+          <span
+            ><i class="fa-solid fa-greater-than back-icon info-solid-btn"></i>My
+            Address</span
+          >
+          <span
+            ><i class="fa-solid fa-greater-than back-icon info-solid-btn"></i
+            >Order History</span
+          >
+        </div>
+        <div class="last-container">
+          <p>Photo Instagram</p>
+          <div class="last-container-img">
+            <img src="/Images/insta1.png" alt="" />
+            <img src="/Images/insta2.png" alt="" />
+            <img src="/Images/insta3.png" alt="" />
+            <img src="/Images/insta4.png" alt="" />
+            <img src="/Images/insta5.png" alt="" />
+            <img src="/Images/insta6.png" alt="" />
+            <img src="/Images/insta7.png" alt="" />
+            <img src="/Images/insta1.png" alt="" />
+            <img src="/Images/insta2.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <footer class="footer-container">
+        <div class="footer-copyright">
+          &#169; 2018 <span>modimarijuana.com</span>, made with by youwes, all
+          rights reserved
+        </div>
+        <div class="footer-desc-map">
+          <p>Contact Us</p>
+          <hr />
+          <p>Terms Of Use</p>
+          <hr />
+          <p>Site Map</p>
+          <hr />
+          <p>Privacy Policy</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
